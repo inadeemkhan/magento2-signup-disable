@@ -22,13 +22,13 @@
 ## Screenshots  
 
 **Admin Configuration**  
-![Customer Account Dashboard](https://github.com/inadeemkhan/magento2-signup-disable/blob/developer/images/admin-config.png) 
+![Customer Account Dashboard](https://github.com/inadeemkhan/magento2-signup-disable/blob/master/images/admin-config.png) 
 
 **Signup Page**  
-![Customer Account Create](https://github.com/inadeemkhan/magento2-signup-disable/blob/developer/images/signup.png)  
+![Customer Account Create](https://github.com/inadeemkhan/magento2-signup-disable/blob/master/images/signup.png)  
 
 **Signin Page**  
-![Customer Account Create](https://github.com/inadeemkhan/magento2-signup-disable/blob/developer/images/login.png)  
+![Customer Account Create](https://github.com/inadeemkhan/magento2-signup-disable/blob/master/images/login.png)  
 
 ---
 
