@@ -1,0 +1,39 @@
+<?php
+/** @var \DevScripts\SignupDisable\Block\Message $block */
+?>
+
+<?php if ($block->isSignupDisabled()): ?>
+<div class="devscripts-signup-wrapper">
+    <div class="devscripts-signup-card">
+
+        <div class="devscripts-signup-icon">
+            <span class="lock-icon"></span>
+        </div>
+
+        <h1 class="devscripts-signup-title">
+            <?= $block->escapeHtml(__('Registration Unavailable')) ?>
+        </h1>
+
+        <div class="devscripts-signup-message">
+            <?= nl2br($block->escapeHtml($block->getMessage())) ?>
+        </div>
+
+        <div class="devscripts-signup-actions">
+            <?php if ($block->canShowLogin()): ?>
+                <a href="<?= $block->escapeUrl($block->getLoginUrl()) ?>"
+                   class="action primary devscripts-btn">
+                    <?= $block->escapeHtml(__('Login')) ?>
+                </a>
+            <?php endif; ?>
+
+            <?php if ($block->canShowHome()): ?>
+                <a href="<?= $block->escapeUrl($block->getHomeUrl()) ?>"
+                   class="action secondary devscripts-btn">
+                    <?= $block->escapeHtml(__('Home')) ?>
+                </a>
+            <?php endif; ?>
+        </div>
+
+    </div>
+</div>
+<?php endif; ?>

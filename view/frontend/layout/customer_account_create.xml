@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <head>
+        <css src="DevScripts_SignupDisable::css/signup-disable.css"/>
+    </head>
+    <body>
+        <!-- Remove default signup form -->
+        <referenceBlock name="customer_form_register" remove="true"/>
+
+        <!-- Custom message block -->
+        <referenceContainer name="content">
+            <block class="DevScripts\SignupDisable\Block\Message"
+                   name="devscripts.signup.disabled"
+                   template="DevScripts_SignupDisable::message.phtml"/>
+        </referenceContainer>
+    </body>
+</page>

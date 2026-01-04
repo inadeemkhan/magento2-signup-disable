@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <head>
+        <css src="DevScripts_SignupDisable::css/signup-disable.css"/>
+    </head>
+    <body>
+
+        <!-- Remove default "New Customers" block -->
+        <referenceBlock name="customer.new" remove="true"/>
+
+        <!-- Add custom signup-disabled message in right column -->
+        <referenceContainer name="content">
+            <block class="DevScripts\SignupDisable\Block\Message"
+                   name="devscripts.signup.disabled.login"
+                   template="DevScripts_SignupDisable::message.phtml"
+                   before="customer.login"/>
+        </referenceContainer>
+
+    </body>
+</page>
