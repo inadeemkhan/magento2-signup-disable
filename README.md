@@ -1,15 +1,15 @@
-# Magento 2 Extension — Profile pictures
+# Magento 2 Extension — Signup Disable
 
 ![Magento](https://img.shields.io/badge/Magento-2.x-orange?logo=magento)  ![PHP](https://img.shields.io/badge/PHP-8.x-blue?logo=php) ![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen)  
   
-##### A Magento 2 module that allows customers to upload, preview, change, and remove their profile picture directly from the account creation page and the customer account dashboard, with image validation, modern UI, and scoped styling for seamless frontend integration.
+##### The Signup Disable extension allows store administrators to temporarily or permanently disable customer registration in Magento 2 without affecting existing customer accounts. When enabled, the registration page is replaced with a customizable message informing users that signups are currently unavailable, along with optional navigation links such as Login and Home. This extension helps maintain controlled user access during maintenance periods, private sales, or invitation-only operations while ensuring a clean and user-friendly experience.
 ---
 
 ## Installation  
 
 1. Copy the contents of this repository into:  
    ```bash
-   {MAGENTO_ROOT}/app/code/DevScripts/ProfilePicture/
+   {MAGENTO_ROOT}/app/code/DevScripts/SignupDisable/
    ```
 2. Run the following commands in your Magento root directory:  
    ```bash
